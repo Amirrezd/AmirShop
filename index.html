@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amir Shop - Baby Yoda Galaxy</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  body { font-family: 'Orbitron', sans-serif; margin:0; padding:0; overflow-x:hidden; background:#000; color:white; }
+
+  /* ستاره‌ها */
+  .star {
+    position:absolute;
+    width:2px;
+    height:2px;
+    background:white;
+    border-radius:50%;
+    animation: twinkle linear infinite;
+  }
+  @keyframes twinkle {
+    0% { transform: translateY(0px); opacity:1; }
+    50% { opacity:0.5; }
+    100% { transform: translateY(-1000px); opacity:0; }
+  }
+
+  header h1 {
+    text-shadow: 0 0 15px #0ff, 0 0 30px #0ff;
+  }
+
+  .product h3 {
+    text-shadow: 0 0 10px #0ff;
+  }
+
+  .buy {
+    text-shadow: 0 0 10px #f0f, 0 0 20px #f0f;
+  }
+
+</style>
+</head>
+<body class="relative">
+
+<!-- ایجاد ستاره‌ها با JS -->
+<script>
+  for(let i=0;i<100;i++){
+    let star = document.createElement('div');
+    star.className = 'star';
+    star.style.left = Math.random()*window.innerWidth+'px';
+    star.style.top = Math.random()*window.innerHeight+'px';
+    star.style.width = star.style.height = (Math.random()*2+1)+'px';
+    star.style.animationDuration = (Math.random()*5+5)+'s';
+    document.body.appendChild(star);
+  }
+</script>
+
+<!-- هدر -->
+<header class="bg-black bg-opacity-50 p-6 text-center shadow-lg">
+  <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-green-400 drop-shadow-lg">🌌 Amir Shop - Baby Yoda Galaxy 🌌</h1>
+</header>
+
+<!-- محصولات -->
+<section class="max-w-7xl mx-auto p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 relative z-10">
+
+  <!-- محصول 1 -->
+  <div class="product bg-gray-800 rounded-xl shadow-xl overflow-hidden transform transition hover:scale-105 hover:shadow-2xl">
+    <img class="w-full h-48 object-cover" src="https://m.media-amazon.com/images/I/71kq0HH4s9L._AC_SL1500_.jpg" alt="Baby Yoda 1">
+    <div class="p-4">
+      <h3 class="text-xl font-semibold text-green-400 mb-2">Baby Yoda 1</h3>
+      <p class="text-gray-300 mb-4">Price: 50,000 IRR</p>
+      <a href="https://wa.me/+989022825527?text=سلام+می‌خواهم+بیبی+یودا+1+را+سفارش+دهم" target="_blank" class="buy block bg-pink-600 text-white text-center py-2 rounded-lg font-bold shadow-md hover:bg-green-400 hover:text-black transition">Buy on WhatsApp</a>
+    </div>
+  </div>
+
+  <!-- محصول 2 -->
+  <div class="product bg-gray-800 rounded-xl shadow-xl overflow-hidden transform transition hover:scale-105 hover:shadow-2xl">
+    <img class="w-full h-48 object-cover" src="https://m.media-amazon.com/images/I/71kq0HH4s9L._AC_SL1500_.jpg" alt="Baby Yoda 2">
+    <div class="p-4">
+      <h3 class="text-xl font-semibold text-green-400 mb-2">Baby Yoda 2</h3>
+      <p class="text-gray-300 mb-4">Price: 75,000 IRR</p>
+      <a href="https://wa.me/+989022825527?text=سلام+می‌خواهم+بیبی+یودا+2+را+سفارش+دهم" target="_blank" class="buy block bg-pink-600 text-white text-center py-2 rounded-lg font-bold shadow-md hover:bg-green-400 hover:text-black transition">Buy on WhatsApp</a>
+    </div>
+  </div>
+
+  <!-- محصول 3 -->
+  <div class="product bg-gray-800 rounded-xl shadow-xl overflow-hidden transform transition hover:scale-105 hover:shadow-2xl">
+    <img class="w-full h-48 object-cover" src="https://m.media-amazon.com/images/I/71kq0HH4s9L._AC_SL1500_.jpg" alt="Baby Yoda 3">
+    <div class="p-4">
+      <h3 class="text-xl font-semibold text-green-400 mb-2">Baby Yoda 3</h3>
+      <p class="text-gray-300 mb-4">Price: 100,000 IRR</p>
+      <a href="https://wa.me/+989022825527?text=سلام+می‌خواهم+بیبی+یودا+3+را+سفارش+دهم" target="_blank" class="buy block bg-pink-600 text-white text-center py-2 rounded-lg font-bold shadow-md hover:bg-green-400 hover:text-black transition">Buy on WhatsApp</a>
+    </div>
+  </div>
+
+</section>
+
+<!-- فوتر -->
+<footer class="bg-black bg-opacity-50 p-6 text-center text-gray-400 relative z-10">
+  © 2025 Amir Shop - Baby Yoda Galaxy
+</footer>
+
+</body>
+</html>
