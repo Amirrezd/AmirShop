@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amir Shop</title>
+  <!-- فونت فضایی خفن -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: #000 url('https://images.unsplash.com/photo-1603398938378-9ad8d987f1b1?auto=format&fit=crop&w=1400&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-top: 50px;
+      text-shadow: 0 0 10px #0ff;
+    }
+
+    img {
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #0ff;
+    }
+
+    a {
+      display: inline-block;
+      margin: 20px 0;
+      padding: 15px 30px;
+      background: #0ff;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #0ff;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      background: #00bcd4;
+      box-shadow: 0 0 20px #0ff;
+    }
+
+    p {
+      font-size: 1.2em;
+      text-shadow: 0 0 5px #0ff;
+    }
+
+    /* بخش محصولات */
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 50px 0;
+    }
+
+    .product {
+      background: rgba(0, 0, 0, 0.7);
+      border: 2px solid #0ff;
+      border-radius: 15px;
+      margin: 15px;
+      padding: 20px;
+      width: 220px;
+      transition: 0.3s;
+    }
+
+    .product img {
+      width: 100%;
+      height: auto;
+      margin: 0;
+    }
+
+    .product h2 {
+      font-size: 1.5em;
+      margin: 10px 0 5px 0;
+      text-shadow: 0 0 5px #0ff;
+    }
+
+    .product p {
+      font-size: 1em;
+      margin: 5px 0;
+      text-shadow: 0 0 3px #0ff;
+    }
+
+    .product a {
+      margin-top: 10px;
+    }
+
+    .product:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px #0ff;
+    }
+  </style>
+</head>
+<body>
+  <h1>Amir Shop</h1>
+
+  <!-- تصویر اصلی -->
+  <img src="https://i.imgur.com/2v8hD9f.png" alt="Baby Yoda" width="300">
+
+  <p>Welcome to my space-themed online shop!</p>
+  <a href="https://wa.me/989022825527" target="_blank">Contact via WhatsApp</a>
+
+  <!-- بخش محصولات -->
+  <div class="products">
+    <div class="product">
+      <img src="https://i.imgur.com/2v8hD9f.png" alt="Baby Yoda Figure">
+      <h2>Baby Yoda Figure</h2>
+      <p>Price: $25</p>
+      <a href="https://wa.me/989022825527" target="_blank">Buy Now</a>
+    </div>
+    <div class="product">
+      <img src="https://i.imgur.com/3Wm0BvA.png" alt="Star Wars Mug">
+      <h2>Star Wars Mug</h2>
+      <p>Price: $15</p>
+      <a href="https://wa.me/989022825527" target="_blank">Buy Now</a>
+    </div>
+    <div class="product">
+      <img src="https://i.imgur.com/q1T2zYf.png" alt="Space Poster">
+      <h2>Space Poster</h2>
+      <p>Price: $10</p>
+      <a href="https://wa.me/989022825527" target="_blank">Buy Now</a>
+    </div>
+  </div>
+</body>
+</html>
